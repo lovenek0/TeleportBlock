@@ -1,7 +1,6 @@
 package com.lovenek0.teleportBlock.tools;
 
-import org.bukkit.configuration.file.FileConfiguration;
-import org.bukkit.plugin.java.JavaPlugin;
+import com.lovenek0.teleportBlock.TeleportBlock;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -9,14 +8,13 @@ import java.util.Map;
 public class Locale {
     private static final Map<String, String> messages = new HashMap<>();
 
-    public static void init(JavaPlugin plugin) {
-        FileConfiguration cfg = plugin.getConfig();
-        String currentLang = cfg.getString("language", "en");
+    public static void init() {
+        String currentLang = TeleportBlock.getConfigInstance().getString("language", "en");
 
         String basePath = "languages." + currentLang;
 
-        messages.put("teleportBlockName", cfg.getString(basePath + ".teleportBlockName", "Teleportation Block"));
-        messages.put("teleportCompassName", cfg.getString(basePath + ".teleportCompassName", "Teleportation Compass"));
+        messages.put("teleportBlockName", TeleportBlock.getConfigInstance().getString(basePath + ".teleportBlockName", "Teleportation Block"));
+        messages.put("teleportCompassName", TeleportBlock.getConfigInstance().getString(basePath + ".teleportCompassName", "Teleportation Compass"));
     }
 
     public static String get(String key) {

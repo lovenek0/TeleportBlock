@@ -1,3 +1,5 @@
+teleport-delay: 3000
+cancel-timeout: 350
 language: "ru"
 
 languages:

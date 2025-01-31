@@ -10,12 +10,9 @@ import org.bukkit.*;
 import org.bukkit.block.Block;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
-import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
-import org.bukkit.event.block.BlockPlaceEvent;
 import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.event.player.PlayerQuitEvent;
-import org.bukkit.inventory.EquipmentSlot;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.ShapedRecipe;
 import org.bukkit.inventory.meta.CompassMeta;
@@ -34,10 +31,14 @@ public class TeleportationCompass implements Listener {
     private static final HashMap<Player, Float> teleportingPlayers = new HashMap<>();
     private static final Map<Player, Long> lastInteractionTime = new HashMap<>();
 
-    private static final float timeout = 3f;
+    private static float teleportDelay = 3f;
+    private static int cancelDelay = 350;
     private static final float maxSpeed = 0.2f;
 
     public static void init() {
+        teleportDelay = TeleportBlock.getConfigInstance().getInt("teleport-delay") / 1000f;
+        cancelDelay = TeleportBlock.getConfigInstance().getInt("cancel-timeout");
+
         createRecipe();
         runTeleportationTimer();
         getServer().getPluginManager().registerEvents(new TeleportationCompass(), TeleportBlock.getPluginInstance());
@@ -74,7 +75,7 @@ public class TeleportationCompass implements Listener {
                 Player player = entry.getKey();
                 float time = entry.getValue();
 
-                if (currentTime - lastInteractionTime.getOrDefault(player, 0L) > 350) {
+                if (currentTime - lastInteractionTime.getOrDefault(player, 0L) > cancelDelay) {
                     teleportingPlayers.remove(player);
                     lastInteractionTime.remove(player);
                     teleportingPlayers.remove(player);
@@ -82,7 +83,7 @@ public class TeleportationCompass implements Listener {
                     return;
                 }
 
-                if (time >= timeout) {
+                if (time >= teleportDelay) {
                     ItemStack item = player.getInventory().getItemInMainHand();
 
                     ItemMeta meta = item.getItemMeta();
@@ -121,10 +122,10 @@ public class TeleportationCompass implements Listener {
                     player.setWalkSpeed(maxSpeed);
                 } else {
                     teleportingPlayers.put(player, time + 0.25f);
-                    player.setWalkSpeed(Math.max(0.05f, maxSpeed - time * (maxSpeed - 0.05f) / timeout));
+                    player.setWalkSpeed(Math.max(0.05f, maxSpeed - time * (maxSpeed - 0.05f) / teleportDelay));
 
-                    float volume = Math.min(1.0f, time / timeout);
-                    float pitch = 1.0f + time / timeout;
+                    float volume = Math.min(1.0f, time / teleportDelay);
+                    float pitch = 1.0f + time / teleportDelay;
 
                     Bukkit.getOnlinePlayers().forEach(p ->
                             p.playSound(
