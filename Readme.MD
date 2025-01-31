@@ -1,3 +1,5 @@
+### [[English]](Readme.MD) [[Russian]](ReadmeRU.MD)
+
 # TeleportBlock
 
 **Version:** 1.0.0  
