@@ -41,11 +41,11 @@ languages:
 
 #### Расположение:
 
-<img alt="Crying Obsidian" src="./assets/Crying_Obsidian.webp" width="32px" height="32px"/><img alt="Crying Obsidian" src="./assets/Crying_Obsidian.webp" width="32px" height="32px"/><img alt="Crying Obsidian" src="./assets/Crying_Obsidian.webp" width="32px" height="32px"/>
+<img alt="Crying Obsidian" src="./assets/Crying_Obsidian.webp" width="32px" height="32px"/> <img alt="Crying Obsidian" src="./assets/Crying_Obsidian.webp" width="32px" height="32px"/> <img alt="Crying Obsidian" src="./assets/Crying_Obsidian.webp" width="32px" height="32px"/>
 <br>
-<img alt="Crying Obsidian" src="./assets/Crying_Obsidian.webp" width="32px" height="32px"/><img alt="Ender Pearl" src="./assets/Ender_Pearl.webp" width="32px" height="32px"/><img alt="Crying Obsidian" src="./assets/Crying_Obsidian.webp" width="32px" height="32px"/>
+<img alt="Crying Obsidian" src="./assets/Crying_Obsidian.webp" width="32px" height="32px"/> <img alt="Ender Pearl" src="./assets/Ender_Pearl.webp" width="32px" height="32px"/> <img alt="Crying Obsidian" src="./assets/Crying_Obsidian.webp" width="32px" height="32px"/>
 <br>
-<img alt="Crying Obsidian" src="./assets/Crying_Obsidian.webp" width="32px" height="32px"/><img alt="Crying Obsidian" src="./assets/Crying_Obsidian.webp" width="32px" height="32px"/><img alt="Crying Obsidian" src="./assets/Crying_Obsidian.webp" width="32px" height="32px"/>
+<img alt="Crying Obsidian" src="./assets/Crying_Obsidian.webp" width="32px" height="32px"/> <img alt="Crying Obsidian" src="./assets/Crying_Obsidian.webp" width="32px" height="32px"/> <img alt="Crying Obsidian" src="./assets/Crying_Obsidian.webp" width="32px" height="32px"/>
 
 ### Компас телепортации
 #### Ингредиенты:
@@ -54,11 +54,11 @@ languages:
 - `Эндер-жемчуг: 1`
 
 #### Расположение:
-<img alt="Iron Ingot" src="./assets/Iron_Ingot.webp" width="32px" height="32px"/><img alt="Iron Ingot" src="./assets/Iron_Ingot.webp" width="32px" height="32px"/><img alt="Iron Ingot" src="./assets/Iron_Ingot.webp" width="32px" height="32px"/>
+<img alt="Iron Ingot" src="./assets/Iron_Ingot.webp" width="32px" height="32px"/> <img alt="Iron Ingot" src="./assets/Iron_Ingot.webp" width="32px" height="32px"/> <img alt="Iron Ingot" src="./assets/Iron_Ingot.webp" width="32px" height="32px"/>
 <br>
-<img alt="Iron Ingot" src="./assets/Iron_Ingot.webp" width="32px" height="32px"/><img alt="Redstone_Dust" src="./assets/Redstone_Dust.webp" width="32px" height="32px"/><img alt="Iron Ingot" src="./assets/Iron_Ingot.webp" width="32px" height="32px"/>
+<img alt="Iron Ingot" src="./assets/Iron_Ingot.webp" width="32px" height="32px"/> <img alt="Redstone_Dust" src="./assets/Redstone_Dust.webp" width="32px" height="32px"/> <img alt="Iron Ingot" src="./assets/Iron_Ingot.webp" width="32px" height="32px"/>
 <br>
-<img alt="Iron Ingot" src="./assets/Iron_Ingot.webp" width="32px" height="32px"/><img alt="Ender Pearl" src="./assets/Ender_Pearl.webp" width="32px" height="32px"/><img alt="Iron Ingot" src="./assets/Iron_Ingot.webp" width="32px" height="32px"/>
+<img alt="Iron Ingot" src="./assets/Iron_Ingot.webp" width="32px" height="32px"/> <img alt="Ender Pearl" src="./assets/Ender_Pearl.webp" width="32px" height="32px"/> <img alt="Iron Ingot" src="./assets/Iron_Ingot.webp" width="32px" height="32px"/>
 
 ## Использование
 ### Установка блока телепортации
