@@ -1,0 +1,7 @@
+name: TeleportBlock
+version: '1.0.0'
+author: 'lovenek0'
+prefix: 'TeleportBlock'
+website: ''
+main: com.lovenek0.teleportBlock.TeleportBlock
+api-version: '1.21'

@@ -1,0 +1,10 @@
+language: "ru"
+
+languages:
+  en:
+    teleportBlockName: "Teleportation Block"
+    teleportCompassName: "Teleportation Compass"
+
+  ru:
+    teleportBlockName: "Блок телепортации"
+    teleportCompassName: "Компас телепортации"
