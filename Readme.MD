@@ -70,7 +70,7 @@ languages:
 
 ### Teleportation
 1. Hold the **Teleportation Compass** in your main hand.
-2. **Right-click** in the air to activate teleportation.
+2. **Right-click** and hold in the air to activate teleportation.
 3. Wait (default: 3 seconds) without moving.
 4. If teleportation is not canceled during this time, you will be teleported.
 
